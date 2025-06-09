@@ -104,8 +104,7 @@ function drawTractor() {
   text("🚜", tractorX, MAP_H / 2);
 
   tractorX += tractorSpeed;
-
-  // Inverte a direção ao atingir as bordas
+  
   if (tractorX < -100 || tractorX > MAP_W + 100) {
     tractorSpeed *= -1;
   }
